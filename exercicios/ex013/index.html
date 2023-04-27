@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindo videos hospedados localmente</H1>
+    <p>Estes vídeos estão hospedados no meu próprio servidor</p>
+<!--Essa tag serve para add video, ja a outra para dimencionar o tamanho do video no navegador(width)-->
+    <video src="midias/meuvideo2.mp4" width="300" loop controls></video>
+    <video src="midias/meuvideo2.webm" width="300" loop controls></video>
+    <video src="midias/meuvideo2.m4v" width="300" loop controls></video>
+    <video src="midias/meuvideo2.ogv" width="300" loop controls></video>
+    
+    <h1>Agora vamos criar um video de varios formatos</h1><!--para rodar em todos os navegadores-->
+
+    <video controls loop autoplay width="200" poster="imagens/pexels-photo-799443.jpeg"><!--As vezes o inicio do video fica com uma tela preta, entao quando iniciamos o site e vc quer que o video tenha uma pre-capa como a imagem inicial antes do play usamos a tag *poster* e selecionamos uma imagem-->
+     <source src="midias/meuvideo2.mp4" type="video/mp4">
+     <source src="midias/meuvideo2.m4v" type="video/m4v"><!--tag loop, para o video ou audio reiniciar assim que acabar, tag autoplay, iniciar assim que abrir a pagina-->
+     <source src="midias/meuvideo2.webm" type="video/webm">
+     <source src="midias/meuvideo2.ogv" type="video/ogv">
+     <p>seu navegador nao consegue reproduzir esse formato de video</p><!----Esta msg vai aparecer caso o navegador nao tenha compatibilidade para reproduzir o video
+        MAS TOME CUIDADO COM O TAMANHO DOS ARQUIVOS, LEMBRANDO QUE VAMOS HOSPEDAR TUDO EM UM SERVER PAGO, E ISSO PODE ENCARECER O PROJETO--->
+    </video>
+    <h1>Inserindo videos do YouTube</h1>
+
+    <iframe width="550" height="315" src="https://www.youtube.com/embed/EL2XOIVzvlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+</body>
+</html>
