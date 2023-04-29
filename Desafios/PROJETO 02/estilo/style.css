@@ -30,6 +30,7 @@ header {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(61, 60, 51));
     color: white;
     text-align: center;
+    inset: 6px 6px 13px 0px rgba(0, 0, 0, 0.781);
 }
 header > h1 {
     padding-top: 50px;
@@ -98,4 +99,6 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 5px;
+    inset: 6px 6px 13px 0px rgba(0, 0, 0, 0.781);
 }
