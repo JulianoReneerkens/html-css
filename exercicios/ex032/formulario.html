@@ -14,10 +14,21 @@
 
 </head>
 <body>
+    <!--sempre usar label para ligar anexo ao nome -->
     <h1>Meu primeiro formulario</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome <input type="text" name="nome" id="nome"></p>
+    <form action="cadastro.php" method="post">
+
+        <p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome: </label><input type="text" name="nome" id="isobrenome"></p>
+
         <p><input type="submit" value="Enviar"></p>
+
     </form>
 </html>
+
+<!--existem 2 metodos de formularios , metodo padrao gath e ou post
+post vai ocultar da linha http as info do formulario--
+gat: quando nao tiver dados sensiveis
+post:dados um poco mais secretos apesar de ainda constar em anexo no inspecionar
+>
